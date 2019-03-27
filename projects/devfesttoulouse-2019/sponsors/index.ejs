@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Germania+One"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+        margin: 0;
+    }
+    section {
+      display: block;
+      position: relative;
+      background-size: contain;
+      width: <%= config.viewport.width %>px;
+      height: <%= config.viewport.height %>px;
+      background-image: url("background.jpg");
+    }
+    .logo {
+      position: absolute;
+      top: 25%;
+      bottom: 35%;
+      left: 15%;
+      right: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo img {
+      max-width: 100%;
+    }
+    .text {
+      position: absolute;
+      top: 65%;
+      left: 15%;
+      right: 45%;
+      font-family: "Germania One", cursive;
+      font-size: 100px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <% items.forEach(function(sponsor){ %> <%- include('sponsor.ejs', {sponsor:
+    sponsor}); %> <% }); %>
+    <script src="/reload/reload.js"></script>
+  </body>
+</html>

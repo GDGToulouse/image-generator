@@ -1,0 +1,27 @@
+viewport:
+  width: 1920
+  height: 1080
+screenshot:
+  type: "jpeg" # or "png"
+  quality: 100  # The quality of the image, between 0-100. Not applicable to png images. 
+items:
+  lets_sketchnote:
+    title: 'Let’s Sketchnote : prise de notes visuelle'
+    speakers:
+      - name: Ane DIAZ DE TUESTA
+        photo: speakers/ane_diaz_de_tuesta.jpg
+  ceinture_noir:
+    title: 'Ceinture noire Karate en tests d’API REST'
+    speakers:
+      - name: Nicolas Comet
+        photo: speakers/comet_nicolas.jpg
+      - name: Benoit PRIOUX
+        photo: speakers/benoit_prioux.png
+  comment_torganiser:
+    title: >-
+       Comment t'organiser quand tu es b****lique de naissance (et depuis des décennies), que tu as plusieurs jobs (ou projets),  sans exploser en vol ... Et bosser à plusieurs ... Et y arriver
+    fontSize: 50px
+    speakers:
+      - name: Philippe Charriere
+        photo: speakers/philippe_charriere.jpg
+        fontSize: 40px

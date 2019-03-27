@@ -1,0 +1,22 @@
+viewport:
+  width: 1920
+  height: 1080
+screenshot:
+  type: "jpeg" # or "png"
+  quality: 100  # The quality of the image, between 0-100. Not applicable to png images. 
+items:
+  cirruseo:
+    text: "Merci à Cirruseo"
+    logo:
+      src: "logos/cirruseo.png"
+    badge: "badges/silver.png"
+  delair:
+    text: "Merci à Delair"
+    logo:
+      src: "logos/Delair.png"
+    badge: "badges/gold.png"
+  commit42:
+    text: "Merci à commit42"
+    logo:
+      src: "logos/commit42.png"
+    badge: "badges/bronze.png"

@@ -1,0 +1,35 @@
+{
+  "name": "image-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve:dft2019:sponsors": "./server.js --path projects/devfesttoulouse-2019/sponsors",
+    "build:dft2019:sponsors": "./build.js --path projects/devfesttoulouse-2019/sponsors",
+    "serve:dft2019:youtube": "./server.js --path projects/devfesttoulouse-2019/youtube",
+    "build:dft2019:youtube": "./build.js --path projects/devfesttoulouse-2019/youtube",
+    "build": "run-s build:*:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GDGToulouse/image-generator.git"
+  },
+  "author": "DevFestToulouse <contact@devfesttoulouse.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GDGToulouse/image-generator/issues"
+  },
+  "homepage": "https://github.com/GDGToulouse/image-generator#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "fs-extra": "^7.0.1",
+    "js-yaml": "^3.13.0",
+    "minimist": "^1.2.0",
+    "node-watch": "^0.6.0",
+    "npm-run-all": "^4.1.5",
+    "puppeteer": "^1.13.0",
+    "reload": "^2.4.0"
+  }
+}
