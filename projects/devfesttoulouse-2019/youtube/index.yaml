@@ -6,12 +6,16 @@ screenshot:
   quality: 100  # The quality of the image, between 0-100. Not applicable to png images. 
 items:
   lets_sketchnote:
+    type: Conference
+    category: Native Mobile
     title: 'Let’s Sketchnote : prise de notes visuelle'
     speakers:
       - name: Ane DIAZ DE TUESTA
         photo: speakers/ane_diaz_de_tuesta.jpg
   ceinture_noir:
     title: 'Ceinture noire Karate en tests d’API REST'
+    type: Conference
+    category: Native Mobile
     speakers:
       - name: Nicolas Comet
         photo: speakers/comet_nicolas.jpg
@@ -19,9 +23,10 @@ items:
         photo: speakers/benoit_prioux.png
   comment_torganiser:
     title: >-
-       Comment t'organiser quand tu es b****lique de naissance (et depuis des décennies), que tu as plusieurs jobs (ou projets),  sans exploser en vol ... Et bosser à plusieurs ... Et y arriver
+       L'HISTOIRE DE LA DÉCOUVERTE D'UNE BACKDOOR SIGNÉ ONEPLUS
     fontSize: 50px
+    type: Conference
+    category: Native Mobile
     speakers:
-      - name: Philippe Charriere
-        photo: speakers/philippe_charriere.jpg
-        fontSize: 40px
+      - name: Baptiste Robert
+        photo: https://avatars2.githubusercontent.com/u/36547191?v=4
