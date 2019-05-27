@@ -5,18 +5,43 @@ screenshot:
   type: "jpeg" # or "png"
   quality: 100  # The quality of the image, between 0-100. Not applicable to png images. 
 items:
-  cirruseo:
-    text: "Merci à Cirruseo"
-    logo:
-      src: "logos/cirruseo.png"
-    badge: "badges/silver.png"
-  delair:
-    text: "Merci à Delair"
-    logo:
-      src: "logos/Delair.png"
+  toulouse:
+    type: Platinium
+    logo: "logos/tls-metropole.png"
     badge: "badges/gold.png"
-  commit42:
-    text: "Merci à commit42"
-    logo:
-      src: "logos/commit42.png"
+  delair:
+    type: Platinium
+    logo: "logos/logo-cenareo.png"
+    badge: "badges/gold.png"
+  sii:
+    type: Platinium
+    logo: "logos/logo-sii.png"
+    badge: "badges/gold.png"
+  sl:
+    type: Platinium
+    logo: "logos/logo-stack_labs.svg"
+    badge: "badges/gold.png"
+  ibp:
+    type: Gold
+    logo: "logos/logo-informatique_banque_populaire.png"
+    badge: "badges/silver.png"
+  openairlines:
+    type: Startup
+    logo: "logos/logo-openairlines.png"
+    badge: "badges/silver.png"
+  morning:
+    type: Soutien
+    logo: "logos/logo-morning.svg"
+    badge: "badges/bronze.png"
+  squoring:
+    type: Soutien
+    logo: "logos/logo-squoring_technologies.jpg"
+    badge: "badges/bronze.png"
+  cnes:
+    type: Soutien
+    logo: "logos/logo-cnes.svg"
+    badge: "badges/bronze.png"
+  decasoft:
+    type: Soutien
+    logo: "logos/logo-decasoft.jpg"
     badge: "badges/bronze.png"

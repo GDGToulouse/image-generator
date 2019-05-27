@@ -6,11 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Page Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap" rel="stylesheet">
+
 </head>
 <style>
   body {
     margin: 0;
+    font-family: 'Comfortaa', cursive;
   }
 
   section {
@@ -19,37 +21,35 @@
     background-size: contain;
     width: <%=config.viewport.width %>px;
     height: <%=config.viewport.height %>px;
-    background-image: url("background.jpg");
+    background-image: url('background.jpg');
   }
 
   .container {
     position: absolute;
-    top: 170px;
-    left: 450px;
-    right: 367px;
-    bottom: 53px;
+    top: 0px;
+    left: 0px;
+    right: 680px;
+    bottom: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 30px;
+    padding: 50px;
   }
 
   .meta {
-    font-family: "Comfortaa", cursive;
-    text-align: left;
+    text-align: center;
     margin: 10px;
     color: #673ab7;
-    font-weight: bold;
     font-size: 50px;
+    font-weight: bold;
   }
 
   .title {
-    font-family: "Comfortaa", cursive;
-    text-align: left;
-    margin: 10px;
-    line-height: 80px;
-    font-size: 50px;
-    text-transform: uppercase;
+    text-align: center;
+    margin: 30px 0;
+    line-height: 100px;
+    font-size: 90px;
+    text-transform: lowercase;
   }
 
   .speaker-container {
@@ -65,34 +65,35 @@
   }
 
   .speaker img {
-    width: 200px;
+    margin: 10px 0;
+    width: 250px;
     border-radius: 100%;
-    border: 6px solid #673ab7;
+    border: 10px solid #673ab7;
   }
 
   .speaker h3 {
-    font-family: "Comfortaa", cursive;
-    font-weight: bolder;
     margin: 10px;
-    font-size: 30px;
+    font-size: 40px;
+    color: #673ab7;
+    text-transform: capitalize;
   }
 </style>
 
 <body>
-  <% items.forEach(function(talk){ %>
+  <% items.forEach(function(talk, index){ %>
   <section>
     <div class="container">
       <h3 class="meta">
         <small><%= talk.type %></small> <br /> <%= talk.category %>
       </h3>
-      <h1 class="title" style="font-size: <% if (talk.fontSize) { %><%= talk.fontSize %><% } %>">
+      <h1 class="title" style="<% if (talk.css) { %><%= talk.css %><% } %>">
         <%= talk.title %>
       </h1>
       <div class="speaker-container">
         <% talk.speakers.forEach(function(speaker){ %>
         <div class="speaker">
           <img src="<%= speaker.photo %>" />
-          <h3 style="font-size: <% if (talk.fontSize) { %><%= speaker.fontSize %><% } %>">
+          <h3 style="<% if (speaker.css) { %><%= speaker.css %><% } %>">
             <%= speaker.name %></h3>
         </div>
         <% }); %>

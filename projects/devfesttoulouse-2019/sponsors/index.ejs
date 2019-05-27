@@ -1,54 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Germania+One"
-      rel="stylesheet"
-    />
-  </head>
-  <style>
-    body {
-        margin: 0;
-    }
-    section {
-      display: block;
-      position: relative;
-      background-size: contain;
-      width: <%= config.viewport.width %>px;
-      height: <%= config.viewport.height %>px;
-      background-image: url("background.jpg");
-    }
-    .logo {
-      position: absolute;
-      top: 25%;
-      bottom: 35%;
-      left: 15%;
-      right: 45%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .logo img {
-      max-width: 100%;
-    }
-    .text {
-      position: absolute;
-      top: 65%;
-      left: 15%;
-      right: 45%;
-      font-family: "Germania One", cursive;
-      font-size: 100px;
-      text-align: center;
-    }
-  </style>
-  <body>
-    <% items.forEach(function(sponsor){ %> <%- include('sponsor.ejs', {sponsor:
-    sponsor}); %> <% }); %>
-    <script src="/reload/reload.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap" rel="stylesheet">
+</head>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+  }
+  section {
+    display: block;
+    position: relative;
+    background-size: contain;
+    width: <%=config.viewport.width %>px;
+    height: <%=config.viewport.height %>px;
+    background-image: url("background.jpg");
+  }
+
+  .container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 680px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .type {
+    margin: 10px;
+    color: #673ab7;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .logo img {
+    min-width: 50%;
+    max-width: 900px;
+    max-height: 700px;
+  }
+</style>
+
+<body>
+  <% items.forEach(function(sponsor, index){ %>
+  <section>
+    <div class="container">
+      <!-- <div class="badge">
+        <img src="<%= sponsor.badge %>" />
+      </div>
+      <h3 class="type">
+        Sponsor: <%= sponsor.type %>
+      </h3> -->
+      <div class="logo">
+        <img src="<%= sponsor.logo %>" />
+      </div>
+    </div>
+  </section>
+  <% }); %>
+  <script src="/reload/reload.js"></script>
+</body>
+
 </html>

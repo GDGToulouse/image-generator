@@ -9,8 +9,10 @@ items:
     type: Conference
     category: Native Mobile
     title: 'Let’s Sketchnote : prise de notes visuelle'
+    css: ''
     speakers:
       - name: Ane DIAZ DE TUESTA
+        css: ''
         photo: speakers/ane_diaz_de_tuesta.jpg
   ceinture_noir:
     title: 'Ceinture noire Karate en tests d’API REST'
@@ -24,7 +26,6 @@ items:
   comment_torganiser:
     title: >-
        L'HISTOIRE DE LA DÉCOUVERTE D'UNE BACKDOOR SIGNÉ ONEPLUS
-    fontSize: 50px
     type: Conference
     category: Native Mobile
     speakers:
