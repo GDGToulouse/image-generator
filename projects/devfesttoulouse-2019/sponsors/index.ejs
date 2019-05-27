@@ -9,12 +9,25 @@
   <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap" rel="stylesheet">
 </head>
 <style>
+  :root {
+    --platinum: #673ab7;
+    --platinum-shadow: #eaddff;
+    --gold: #E9BE6F;
+    --gold-shadow: rgb(255, 238, 209);
+    --startup: #FA7B7F;
+    --startup-shadow: rgb(255, 205, 207);
+    --support: #7D8695;
+    --support-shadow: rgb(221, 221, 221);
+  }
+
   body {
     margin: 0;
     font-family: 'Comfortaa', cursive;
   }
+
   section {
     display: block;
+    z-index: 0;
     position: relative;
     background-size: contain;
     width: <%=config.viewport.width %>px;
@@ -37,7 +50,7 @@
 
   .type {
     margin: 10px;
-    color: #673ab7;
+    color: var(--main-bg-color);
     font-size: 50px;
     font-weight: bold;
   }
@@ -51,6 +64,100 @@
     max-width: 900px;
     max-height: 700px;
   }
+
+  .ribbon {
+    width: 100px;
+    height: 220px;
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    -webkit-animation: drop forwards 0.8s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation: drop forwards 0.8s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  .ribbon.platinum {
+    background-color: var(--platinum);
+  }
+
+  .ribbon.gold {
+    background-color: var(--gold);
+  }
+
+  .ribbon.startup {
+    background-color: var(--startup);
+  }
+
+  .ribbon.support {
+    background-color: var(--support);
+  }
+
+  .ribbon:before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: -50px;
+    border-bottom: 50px solid transparent;
+  }
+
+  .ribbon.platinum:before {
+    border-left: 50px solid var(--platinum);
+    border-right: 50px solid var(--platinum);
+  }
+
+  .ribbon.gold:before {
+    border-left: 50px solid var(--gold);
+    border-right: 50px solid var(--gold);
+  }
+
+  .ribbon.startup:before {
+    border-left: 50px solid var(--startup);
+    border-right: 50px solid var(--startup);
+  }
+
+  .ribbon.support:before {
+    border-left: 50px solid var(--support);
+    border-right: 50px solid var(--support);
+  }
+
+  .ribbon:after {
+    content: '';
+    width: 200px;
+    height: 340px;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: -120px;
+    transform: skewY(-35deg) skewX(0);
+  }
+
+  .ribbon.platinum:after {
+    background-color: var(--platinum-shadow);
+  }
+
+  .ribbon.gold:after {
+    background-color: var(--gold-shadow);
+  }
+
+  .ribbon.startup:after {
+    background-color: var(--startup-shadow);
+  }
+
+  .ribbon.support:after {
+    background-color: var(--support-shadow);
+  }
+
+  .ribbon h3 {
+    letter-spacing: 2px;
+    transform: rotate(90deg);
+    color: #fff;
+    font: 700 28px/1 'Lato', sans-serif;
+    text-shadow: 0 4px 1px rgba(0, 0, 0, .2);
+    text-transform: uppercase;
+    text-align: center;
+    height: 70px;
+    width: 60px;
+  }
 </style>
 
 <body>
@@ -59,10 +166,12 @@
     <div class="container">
       <!-- <div class="badge">
         <img src="<%= sponsor.badge %>" />
+      </div> -->
+      <div class="ribbon <%= sponsor.type %>">
+        <h3>
+          <%= sponsor.type %>
+        </h3>
       </div>
-      <h3 class="type">
-        Sponsor: <%= sponsor.type %>
-      </h3> -->
       <div class="logo">
         <img src="<%= sponsor.logo %>" />
       </div>
