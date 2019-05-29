@@ -77,6 +77,10 @@
     color: #673ab7;
     text-transform: capitalize;
   }
+
+  .speaker h3 small {
+    color: #333;
+  }
 </style>
 
 <body>
@@ -84,7 +88,7 @@
   <section>
     <div class="container">
       <h3 class="meta">
-        <small><%= talk.type %></small> <br /> <%= talk.category %>
+        <%= talk.type %>: <%= talk.category %> 
       </h3>
       <h1 class="title" style="<% if (talk.css) { %><%= talk.css %><% } %>">
         <%= talk.title %>
@@ -94,7 +98,7 @@
         <div class="speaker">
           <img src="<%= speaker.photo %>" />
           <h3 style="<% if (speaker.css) { %><%= speaker.css %><% } %>">
-            <%= speaker.name %></h3>
+            <%= speaker.name %> <% if (speaker.twitter) { %><br> <small>@<%= speaker.twitter %></small> <% } %></h3>
         </div>
         <% }); %>
       </div>

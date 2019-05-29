@@ -32,7 +32,6 @@
     background-size: contain;
     width: <%=config.viewport.width %>px;
     height: <%=config.viewport.height %>px;
-    background-image: url("background.jpg");
   }
 
   .container {
@@ -60,7 +59,7 @@
   }
 
   .logo img {
-    min-width: 50%;
+    min-width: 700px;
     max-width: 900px;
     max-height: 700px;
   }
@@ -162,7 +161,7 @@
 
 <body>
   <% items.forEach(function(sponsor, index){ %>
-  <section>
+  <section style="background-image: url('background_<%= sponsor.type %>.jpg');">
     <div class="container">
       <!-- <div class="badge">
         <img src="<%= sponsor.badge %>" />
@@ -173,7 +172,7 @@
         </h3>
       </div>
       <div class="logo">
-        <img src="<%= sponsor.logo %>" />
+        <img src="<%= sponsor.logo %>" style="<% if (sponsor.style) { %><%= sponsor.style %><% } %>" />
       </div>
     </div>
   </section>

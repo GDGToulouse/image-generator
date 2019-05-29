@@ -3,31 +3,46 @@ viewport:
   height: 1080
 screenshot:
   type: "jpeg" # or "png"
-  quality: 100  # The quality of the image, between 0-100. Not applicable to png images. 
+  quality: 100  # The quality of the image, between 0-100. Not applicable to png images.
 items:
-  lets_sketchnote:
+  DaKangz:
     type: Conference
-    category: Native Mobile
-    title: 'Let’s Sketchnote : prise de notes visuelle'
-    css: ''
+    category: Web
+    title: 'WEBGPU: NEXT-GENERATION 3D GRAPHICS ON THE WEB'
     speakers:
-      - name: Ane DIAZ DE TUESTA
-        css: ''
-        photo: speakers/ane_diaz_de_tuesta.jpg
-  ceinture_noir:
-    title: 'Ceinture noire Karate en tests d’API REST'
-    type: Conference
-    category: Native Mobile
+      - name: Corentin Wallez
+        photo: https://pbs.twimg.com/profile_images/736988508624015361/r_Y_Lx-x_400x400.jpg
+        twitter: DaKangz
+  marie_viley:
+    title: 3 TECHNIQUES FACILES DE MANIPULATION
+    type: Lightning
+    category: WTF
     speakers:
-      - name: Nicolas Comet
-        photo: speakers/comet_nicolas.jpg
-      - name: Benoit PRIOUX
-        photo: speakers/benoit_prioux.png
-  comment_torganiser:
+      - name: Marie Viley
+        photo: https://lh6.googleusercontent.com/-LZHYx43aSFI/AAAAAAAAAAI/AAAAAAAACd4/xbCJI1QDS3w/photo.jpg
+        twitter: marie_viley
+  fs0c131y:
     title: >-
-       L'HISTOIRE DE LA DÉCOUVERTE D'UNE BACKDOOR SIGNÉ ONEPLUS
+       L'HISTOIRE DE LA DÉCOUVERTE D'UNE BACKDOOR SIGNÉE ONEPLUS
     type: Conference
-    category: Native Mobile
+    category: Native mobile apps
     speakers:
       - name: Baptiste Robert
         photo: https://avatars2.githubusercontent.com/u/36547191?v=4
+        twitter: fs0c131y
+  erikras:
+    title: MODERN FORMS IN REACT
+    type: Conference
+    category: Web
+    speakers:
+      - name: Erik Rasmussen
+        photo: https://avatars2.githubusercontent.com/u/4396759?v=4
+        twitter: erikras
+  steveklabnik:
+    title: RUST, WEBASSEMBLY, AND THE FUTURE OF SERVERLESS
+    type: Conference
+    category: Cloud
+    speakers:
+      - name: Steve Klabnik
+        photo: https://avatars2.githubusercontent.com/u/27786?v=4
+        twitter: steveklabnik

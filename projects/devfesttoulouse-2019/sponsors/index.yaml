@@ -8,7 +8,7 @@ items:
   toulouse:
     type: platinum
     logo: "logos/tls-metropole.png"
-  delair:
+  cenareo:
     type: platinum
     logo: "logos/logo-cenareo.png"
   sii:
@@ -20,9 +20,16 @@ items:
   ibp:
     type: gold
     logo: "logos/logo-informatique_banque_populaire.png"
+  continental:
+    type: gold
+    logo: "logos/logo-continental.png"
   openairlines:
     type: startup
     logo: "logos/logo-openairlines.png"
+  onestock:
+    type: startup
+    logo: "logos/logo-onestock.png"
+    style: 'width: 900px;'
   morning:
     type: support
     logo: "logos/logo-morning.svg"
