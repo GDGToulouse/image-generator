@@ -20,6 +20,12 @@ items:
   ibp:
     type: gold
     logo: "logos/logo-informatique_banque_populaire.png"
+  neosoft:
+    type: gold
+    logo: "logos/logo-neo-soft.png"
+  elastic:
+    type: gold
+    logo: "logos/logo-elastic.png"
   continental:
     type: gold
     logo: "logos/logo-continental.png"
