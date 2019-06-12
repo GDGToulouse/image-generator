@@ -29,6 +29,12 @@ items:
   continental:
     type: gold
     logo: "logos/logo-continental.png"
+  monkeypatch:
+    type: gold
+    logo: "logos/logo-monkeypatch.png"
+  berger_levrault:
+    type: gold
+    logo: "logos/logo-berger_levrault.png"
   openairlines:
     type: startup
     logo: "logos/logo-openairlines.png"
