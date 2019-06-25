@@ -22,6 +22,7 @@
     width: <%=config.viewport.width %>px;
     height: <%=config.viewport.height %>px;
     background-image: url('background.jpg');
+    overflow: hidden;
   }
 
   .container {
@@ -81,6 +82,9 @@
   .speaker h3 small {
     color: #333;
   }
+  .language {
+    height: 40px;
+  }
 </style>
 
 <body>
@@ -88,7 +92,7 @@
   <section>
     <div class="container">
       <h3 class="meta">
-        <%= talk.type %>: <%= talk.category %> 
+        <img class="language" src="languages/<%= talk.language %>.svg" /> <%= talk.type %>: <%= talk.category %> 
       </h3>
       <h1 class="title" style="<% if (talk.css) { %><%= talk.css %><% } %>">
         <%= talk.title %>
