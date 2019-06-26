@@ -227,7 +227,7 @@ items:
     type: Conference 
     category: Native mobile apps
     language: fr
-    title: "A la découverte de la réalité augmentée avec ARCore"
+    title: "À la découverte de la réalité augmentée avec ARCore"
     speakers :
       - name: Christophe Jollivet
         photo: "https://lh3.googleusercontent.com/-3sUzAaUN01o/AAAAAAAAAAI/AAAAAAAACzE/6Nekr6L7RSk/photo.jpg"
