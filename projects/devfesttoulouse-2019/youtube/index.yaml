@@ -59,6 +59,15 @@ items:
       - name: Steve Klabnik
         photo: "https://avatars2.githubusercontent.com/u/27786?v=4"
         twitter: steveklabnik ‏
+  adrien_anceau:
+    type: Conference 
+    category: Method & Tools
+    language: fr
+    title: "DevOps at scale"
+    speakers :
+      - name: ADRIEN ANCEAU
+        photo: "https://lh4.googleusercontent.com/-JbPPBBW8zqU/AAAAAAAAAAI/AAAAAAAAAAc/aoga3U16k7Y/photo.jpg"
+        twitter: aaadrieeen
   gautier_mechling:
     type: Conference
     category: IOT
@@ -256,6 +265,15 @@ items:
       - name: Mélanie Ducoffe
         photo: "https://lh3.googleusercontent.com/-CzRWhTBIOgY/AAAAAAAAAAI/AAAAAAAAAB8/gXi6gNoC0iY/photo.jpg"
         twitter: mducoffe
+  noel_mace:
+    type: Conference
+    category: Web
+    language: fr
+    title: "Brace yourself, 🍦Vanilla is coming … back 🕶!"
+    speakers :
+      - name: Noël Macé
+        photo: "https://lh4.googleusercontent.com/-_DHdWW0tzAs/AAAAAAAAAAI/AAAAAAAAAGY/SHaW4w5ruEQ/photo.jpg"
+        twitter: noel_mace
   theophile_wallez:
     type: Quickie
     category: WTF

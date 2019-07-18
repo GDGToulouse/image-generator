@@ -17,6 +17,9 @@ items:
   sl:
     type: platinum
     logo: "logos/logo-stack_labs.svg"
+  airbus:
+    type: platinum
+    logo: "logos/logo-airbus.png"
   ibp:
     type: gold
     logo: "logos/logo-informatique_banque_populaire.png"
@@ -35,6 +38,36 @@ items:
   berger_levrault:
     type: gold
     logo: "logos/logo-berger_levrault.png"
+  lyra:
+    type: gold
+    logo: "logos/logo-lyra_network.png"
+  smile:
+    type: gold
+    logo: "logos/logo-smile.png"
+  cirruseo:
+    type: gold
+    logo: "logos/logo-cirruseo.png"
+    style: 'width: 900px; max-height: none !important;'
+  apside:
+    type: gold
+    logo: "logos/logo-apside.png"
+  axileo:
+    type: gold
+    logo: "logos/logo-axileo.png"
+  jfrog:
+    type: gold
+    logo: "logos/logo-jfrog.png"
+    style: 'width: 600px;'
+  pierrefabre:
+    type: gold
+    logo: "logos/logo-pierrefabre.png"
+    style: 'width: 900px;'
+  ippon:
+    type: gold
+    logo: "logos/logo-ippon.png"
+  intuiface:
+    type: startup
+    logo: "logos/logo-intuiface.png"
   openairlines:
     type: startup
     logo: "logos/logo-openairlines.png"
@@ -54,3 +87,8 @@ items:
   decasoft:
     type: support
     logo: "logos/logo-decasoft.jpg"
+    style: 'width: 600px;'
+  libertyrider:
+    type: support
+    logo: "logos/logo-liberty_rider.svg"
+    style: 'width: 800px;'
