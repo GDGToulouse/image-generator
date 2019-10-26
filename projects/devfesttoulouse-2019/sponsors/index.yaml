@@ -20,6 +20,10 @@ items:
   airbus:
     type: platinum
     logo: "logos/logo-airbus.png"
+  capgemini:
+    type: platinum
+    logo: "logos/logo-capgemini.png"
+    style: 'max-width: 1100px;'
   ibp:
     type: gold
     logo: "logos/logo-informatique_banque_populaire.png"
@@ -65,6 +69,19 @@ items:
   ippon:
     type: gold
     logo: "logos/logo-ippon.png"
+  infotel:
+    type: gold
+    logo: "logos/logo-infotel.png"
+    style: 'width: 900px;'
+  github:
+    type: gold
+    logo: "logos/logo-github.png"
+  sycomore:
+    type: gold
+    logo: "logos/logo-sycomore-technologie.png"
+  epitech:
+    type: gold
+    logo: "logos/logo-epitech.png"
   intuiface:
     type: startup
     logo: "logos/logo-intuiface.png"
@@ -92,3 +109,12 @@ items:
     type: support
     logo: "logos/logo-liberty_rider.svg"
     style: 'width: 800px;'
+  commit42:
+    type: support
+    logo: "logos/logo-commit42.png"
+  welovedevs:
+    type: support
+    logo: "logos/logo-welovedevs_com.png"
+  altran:
+    type: support
+    logo: "logos/logo-altran.svg"

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap" rel="stylesheet">
+</head>
+<style>
+  :root {
+    --platinum: #673ab7;
+    --platinum-shadow: #eaddff;
+    --gold: #E9BE6F;
+    --gold-shadow: rgb(255, 238, 209);
+    --startup: #FA7B7F;
+    --startup-shadow: rgb(255, 205, 207);
+    --support: #7D8695;
+    --support-shadow: rgb(221, 221, 221);
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+  }
+
+  section {
+    display: block;
+    z-index: 0;
+    position: relative;
+    background-size: contain;
+    width: <%=config.viewport.width %>px;
+    height: <%=config.viewport.height %>px;
+  }
+
+  .container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 680px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .type {
+    margin: 10px;
+    color: var(--main-bg-color);
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .logo img {
+    max-width: 900px;
+    max-height: 700px;
+  }
+</style>
+
+<body>
+  <% items.forEach(function(sponsor, index){ %>
+  <section style="background-image: url('background.jpg');">
+    <div class="container">
+      <div class="logo">
+        <img src="<%= sponsor.logo %>" style="<% if (sponsor.style) { %><%= sponsor.style %><% } %>" />
+      </div>
+    </div>
+  </section>
+  <% }); %>
+  <script src="/reload/reload.js"></script>
+</body>
+
+</html>

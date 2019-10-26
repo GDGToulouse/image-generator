@@ -9,6 +9,8 @@
     "build:dft2019:sponsors": "./build.js --path projects/devfesttoulouse-2019/sponsors",
     "serve:dft2019:youtube": "./server.js --path projects/devfesttoulouse-2019/youtube",
     "build:dft2019:youtube": "./build.js --path projects/devfesttoulouse-2019/youtube",
+    "serve:gdg:sponsors": "./server.js --path projects/gdgtoulouse/sponsors",
+    "build:gdg:sponsors": "./build.js --path projects/gdgtoulouse/sponsors",
     "build": "run-s build:*:*"
   },
   "repository": {

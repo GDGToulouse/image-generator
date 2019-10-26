@@ -1,0 +1,16 @@
+viewport:
+  width: 1920
+  height: 1080
+screenshot:
+  type: "jpeg" # or "png"
+  quality: 100  # The quality of the image, between 0-100. Not applicable to png images. 
+items:
+  sl:
+    type: platinum
+    logo: "logos/logo-stack_labs.svg"
+  ibp:
+    type: gold
+    logo: "logos/logo-informatique_banque_populaire.png"
+  monkeypatch:
+    type: gold
+    logo: "logos/logo-monkeypatch.png"

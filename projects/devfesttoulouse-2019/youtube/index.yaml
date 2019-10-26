@@ -2,339 +2,368 @@ viewport:
   width: 1920
   height: 1080
 screenshot:
-  type: "jpeg" # or "png"
-  quality: 100  # The quality of the image, between 0-100. Not applicable to png images.
+  type: 'jpeg' # or "png"
+  quality: 100 # The quality of the image, between 0-100. Not applicable to png images.
 items:
+  christian_faure:
+    type: Keynote
+    # category: WTF
+    language: fr
+    title: 'Une analyse critique des "Tech Trends"'
+    speakers:
+      - name: Christian Fauré
+        photo: 'https://2019.devfesttoulouse.fr/images/speakers/christian_faure.jpg'
+        twitter: ChristianFaure
   fabien_tregan:
-    type: Keynote 
+    type: Keynote
     category: WTF
     language: fr
     title: "Une histoire de l'informatique, du métier à tisser à la machine de Babbage..."
-    speakers :
+    speakers:
       - name: Fabien Trégan
-        photo: "https://pbs.twimg.com/profile_images/1127679784434262018/ol6YNR11_400x400.png"
+        photo: 'https://2019.devfesttoulouse.fr/images/speakers/fabien_tregan.jpg'
         twitter: ftregan
   corentin_wallez:
-    type: Conference 
+    type: Conference
     category: Web
     language: en
-    title: "WebGPU: Next-generation 3D Graphics on the Web"
-    speakers :
+    title: 'WebGPU: Next-generation 3D Graphics on the Web'
+    speakers:
       - name: Corentin Wallez
-        photo: "https://lh3.googleusercontent.com/ClSmMH8qSKMoIf8FOcd0kC1bH8fczExtMLs62kSKxdrKlYKyWnoT12Mny7UbUUQPp9BI-1F3wgWeqQFpg4IuUdI"
+        photo: 'https://lh3.googleusercontent.com/ClSmMH8qSKMoIf8FOcd0kC1bH8fczExtMLs62kSKxdrKlYKyWnoT12Mny7UbUUQPp9BI-1F3wgWeqQFpg4IuUdI'
         twitter: DaKangz
   fs0c131y:
-    type: Conference 
+    type: Conference
     category: Native mobile apps
     language: fr
     title: "L'histoire de la découverte d'une backdoor signée Oneplus"
-    speakers :
+    speakers:
       - name: Baptiste Robert
-        photo: "https://avatars2.githubusercontent.com/u/36547191?v=4"
+        photo: 'https://avatars2.githubusercontent.com/u/36547191?v=4'
         twitter: fs0c131y
   marie_viley:
     type: Quickie
     category: WTF
     language: fr
-    title: "3 techniques faciles de manipulation"
-    speakers :
+    title: '3 techniques faciles de manipulation'
+    speakers:
       - name: Marie Viley
-        photo: "https://lh6.googleusercontent.com/-LZHYx43aSFI/AAAAAAAAAAI/AAAAAAAACd4/xbCJI1QDS3w/photo.jpg"
+        photo: 'https://lh6.googleusercontent.com/-LZHYx43aSFI/AAAAAAAAAAI/AAAAAAAACd4/xbCJI1QDS3w/photo.jpg'
         twitter: marie_viley
   erik_rasmussen:
     type: Conference
     category: Web
     language: en
-    title: "Modern Forms in React"
-    speakers :
+    title: 'Modern Forms in React'
+    speakers:
       - name: Erik Rasmussen
-        photo: "https://avatars2.githubusercontent.com/u/4396759?v=4"
+        photo: 'https://avatars2.githubusercontent.com/u/4396759?v=4'
         twitter: erikras
   steve_klabnik:
     type: Conference
     category: Cloud / Infra
     language: en
-    title: "Rust, WebAssembly, and the future of Serverless"
-    speakers :
+    title: 'Rust, WebAssembly, and the future of Serverless'
+    speakers:
       - name: Steve Klabnik
-        photo: "https://avatars2.githubusercontent.com/u/27786?v=4"
+        photo: 'https://avatars2.githubusercontent.com/u/27786?v=4'
         twitter: steveklabnik ‏
   adrien_anceau:
-    type: Conference 
+    type: Conference
     category: Method & Tools
     language: fr
-    title: "DevOps at scale"
-    speakers :
+    title: 'DevOps at scale'
+    speakers:
       - name: ADRIEN ANCEAU
-        photo: "https://lh4.googleusercontent.com/-JbPPBBW8zqU/AAAAAAAAAAI/AAAAAAAAAAc/aoga3U16k7Y/photo.jpg"
+        photo: 'https://lh4.googleusercontent.com/-JbPPBBW8zqU/AAAAAAAAAAI/AAAAAAAAAAc/aoga3U16k7Y/photo.jpg'
         twitter: aaadrieeen
   gautier_mechling:
     type: Conference
     category: IOT
     language: fr
-    title: "Premiers pas avec un microcontrôleur et Google Cloud IoT Core"
-    speakers :
+    title: 'Premiers pas avec un microcontrôleur et Google Cloud IoT Core'
+    speakers:
       - name: Gautier Mechling
-        photo: "https://lh5.googleusercontent.com/-XMS12Sp9jUA/AAAAAAAAAAI/AAAAAAABmqI/tuVp7XFzvbM/photo.jpg"
+        photo: 'https://lh5.googleusercontent.com/-XMS12Sp9jUA/AAAAAAAAAAI/AAAAAAABmqI/tuVp7XFzvbM/photo.jpg'
         twitter: Nilhcem
   loic_ortola:
-    type: Conference 
+    type: Conference
     category: Web
     language: fr
-    title: "The rise of the web"
-    speakers :
+    title: 'The rise of the web'
+    speakers:
       - name: Loïc Ortola
-        photo: "https://avatars2.githubusercontent.com/u/2526081?v=4"
+        photo: 'https://avatars2.githubusercontent.com/u/2526081?v=4'
         twitter: LoicOrtola
   mathieu_passenaud:
-    type: Conference 
+    type: Conference
     category: WTF
     language: fr
-    title: "Mon p*** de voyant moteur est encore allumé ! Comment debugger mon moteur ? Plongeon dans les entrailles des calculateurs moteur"
+    title: 'Mon p*** de voyant moteur est encore allumé ! Comment debugger mon moteur ? Plongeon dans les entrailles des calculateurs moteur'
     css: 'font-size: 60px;'
-    speakers :
+    speakers:
       - name: Mathieu Passenaud
-        photo: "https://lh3.googleusercontent.com/-AdTmzjaMxhc/AAAAAAAAAAI/AAAAAAAAJ4U/rCSxGrIM_ck/photo.jpg"
+        photo: 'https://lh3.googleusercontent.com/-AdTmzjaMxhc/AAAAAAAAAAI/AAAAAAAAJ4U/rCSxGrIM_ck/photo.jpg'
         twitter: mathieupassenau
   piotr_przybyl:
-    type: Conference 
+    type: Conference
     category: WTF
     language: en
-    title: "Four Diseases"
-    speakers :
+    title: 'Four Diseases'
+    speakers:
       - name: Piotr Przybyl
-        photo: "https://2018.devfesttoulouse.fr/images/speakers/piotr_przybyl.jpg"
+        photo: 'https://2018.devfesttoulouse.fr/images/speakers/piotr_przybyl.jpg'
         twitter: piotrprz
   estelle_landry__francois_teychene:
-    type: Conference 
+    type: Conference
     category: Method & Tools
     language: fr
     title: "Le design de l'erreur"
-    speakers :
-      - name: Estelle Landry ☀️
-        photo: "https://sunny-tech.io/images/people/estelle_landry.jpg"
-        twitter: estelandry
+    speakers:
       - name: François Teychene
-        photo: "https://lh6.googleusercontent.com/-RvGrfi4p_Uk/AAAAAAAAAAI/AAAAAAAABtE/iqj8zP9rc0U/photo.jpg"
+        photo: 'https://lh6.googleusercontent.com/-RvGrfi4p_Uk/AAAAAAAAAAI/AAAAAAAABtE/iqj8zP9rc0U/photo.jpg'
         twitter: fteychene
   cyril_delmas:
-    type: Conference 
+    type: Conference
     category: Big Data / ML / AI
     language: fr
-    title: "Introduction à la programmation par contraintes"
-    speakers :
+    title: 'Introduction à la programmation par contraintes'
+    speakers:
       - name: Cyril Delmas
-        photo: "https://avatars0.githubusercontent.com/u/5180763?v=4"
+        photo: 'https://avatars0.githubusercontent.com/u/5180763?v=4'
         twitter: cyril_delmas
   francois_guillaume_ribreau:
-    type: Conference 
+    type: Conference
     category: Method & Tools
     language: fr
-    title: "⛳️ Votre API web passe-t-elle le contrôle technique ? "
-    speakers :
+    title: '⛳️ Votre API web passe-t-elle le contrôle technique ? '
+    speakers:
       - name: Francois-Guillaume Ribreau
-        photo: "https://avatars2.githubusercontent.com/u/138050?v=4"
+        photo: 'https://avatars2.githubusercontent.com/u/138050?v=4'
         twitter: fgribreau
   kfnue96dm9g1zobctf4gvzdolrp2:
-    type: Conference 
+    type: Conference
     category: Method & Tools
     language: fr
-    title: "Le burn-out agile"
-    speakers :
+    title: 'Le burn-out agile'
+    speakers:
       - name: null
-        photo: "https://avatars2.githubusercontent.com/u/7324369?v=4"
+        photo: 'https://avatars2.githubusercontent.com/u/7324369?v=4'
         twitter: cedric_moulard
   alessio_coltellacci:
-    type: Conference 
+    type: Conference
     category: Cloud / Infra
     language: fr
     title: "Comprendre le rôle du noyau d'un système d'exploitation en créant un from scratch"
-    speakers :
+    speakers:
       - name: Alessio Coltellacci
-        photo: "https://avatars3.githubusercontent.com/u/11367839?v=4"
+        photo: 'https://avatars3.githubusercontent.com/u/11367839?v=4'
         twitter: lightplay8
   aleksey_kladov:
-    type: Conference 
+    type: Conference
     category: Languages
     language: en
-    title: "Rust as a High-Level Langage"
-    speakers :
+    title: 'Rust as a High-Level Langage'
+    speakers:
       - name: Aleksey Kladov
-        photo: "https://avatars3.githubusercontent.com/u/1711539?v=4"
-        twitter: 
+        photo: 'https://avatars3.githubusercontent.com/u/1711539?v=4'
+        twitter:
   vincent_ogloblinsky_wassim_chegham:
-    type: Conference 
+    type: Conference
     category: Web
     language: fr
-    title: "Rockin’ in the Angular World"
-    speakers :
+    title: 'Rockin’ in the Angular World'
+    speakers:
       - name: Vincent Ogloblinsky
-        photo: "https://lh3.googleusercontent.com/-ckhK85zrlYM/AAAAAAAAAAI/AAAAAAAAC4g/G5DIeeyNEAM/photo.jpg"
+        photo: 'https://lh3.googleusercontent.com/-ckhK85zrlYM/AAAAAAAAAAI/AAAAAAAAC4g/G5DIeeyNEAM/photo.jpg'
         twitter: vogloblinsky
       - name: Wassim Chegham
-        photo: "https://lh4.googleusercontent.com/-UvesPkEgVGs/AAAAAAAAAAI/AAAAAAAAJ-8/tcq37gGb_iA/photo.jpg"
+        photo: 'https://lh4.googleusercontent.com/-UvesPkEgVGs/AAAAAAAAAAI/AAAAAAAAJ-8/tcq37gGb_iA/photo.jpg'
         twitter: manekinekko
   sylvain_wallez:
-    type: Conference 
+    type: Conference
     category: Web
     language: fr
-    title: "Live coding musical : vous savez coder ? Devenez compositeur avec WebAudio et WebMIDI !"
+    title: 'Live coding musical : vous savez coder ? Devenez compositeur avec WebAudio et WebMIDI !'
     css: 'font-size: 70px;'
-    speakers :
+    speakers:
       - name: Sylvain Wallez
-        photo: "https://avatars2.githubusercontent.com/u/213730?v=4"
+        photo: 'https://avatars2.githubusercontent.com/u/213730?v=4'
         twitter: bluxte
   guillaume_smet:
-    type: Conference 
+    type: Conference
     category: Method & Tools
     language: fr
-    title: "De Java à un exécutable natif : GraalVM et Quarkus changent la donne"
-    speakers :
+    title: 'De Java à un exécutable natif : GraalVM et Quarkus changent la donne'
+    speakers:
       - name: Guillaume Smet
-        photo: "https://avatars1.githubusercontent.com/u/1279749?v=4"
+        photo: 'https://avatars1.githubusercontent.com/u/1279749?v=4'
         twitter: gsmet_
   andrew_radev:
-    type: Conference 
+    type: Conference
     category: Languages
     language: en
-    title: "The Freedom of Static Typing"
-    speakers :
+    title: 'The Freedom of Static Typing'
+    speakers:
       - name: Andrew Radev
-        photo: "https://avatars3.githubusercontent.com/u/124255?v=4"
+        photo: 'https://avatars3.githubusercontent.com/u/124255?v=4'
         twitter: AndrewRadev
   tiffany_souterre_olivier_leplus:
-    type: Conference 
+    type: Conference
     category: Method & Tools
     language: fr
-    title: "Allo Paris, ici San Francisco. Et si on codait ensemble avec VS Code?"
-    speakers :
+    title: 'Allo Paris, ici San Francisco. Et si on codait ensemble avec VS Code?'
+    speakers:
       - name: Tiffany Souterre
-        photo: "https://lh3.googleusercontent.com/-0XDx36TcjxU/AAAAAAAAAAI/AAAAAAABQkA/-hqGP4ktCDY/photo.jpg"
+        photo: 'https://lh3.googleusercontent.com/-0XDx36TcjxU/AAAAAAAAAAI/AAAAAAABQkA/-hqGP4ktCDY/photo.jpg'
         twitter: tiffanysouterre
       - name: Olivier Leplus
-        photo: "https://lh4.googleusercontent.com/-lZ1NmzauJJc/AAAAAAAAAAI/AAAAAAAAgeg/Jaiqf1L_EPM/photo.jpg"
+        photo: 'https://lh4.googleusercontent.com/-lZ1NmzauJJc/AAAAAAAAAAI/AAAAAAAAgeg/Jaiqf1L_EPM/photo.jpg'
         twitter: olivierleplus
   valeriane_venance:
-    type: Conference 
+    type: Conference
     category: Method & Tools
     language: fr
-    title: "Authentication / Authorization Starters Battle"
-    speakers :
+    title: 'Authentication / Authorization Starters Battle'
+    speakers:
       - name: Valeriane Venance
-        photo: "https://lh6.googleusercontent.com/-NtKdRysNSs4/AAAAAAAAAAI/AAAAAAAAAAA/AKxrwcagq8QREXMclDOVCOSp2Zi3FIdK4Q/mo/photo.jpg"
+        photo: 'https://lh6.googleusercontent.com/-NtKdRysNSs4/AAAAAAAAAAI/AAAAAAAAAAA/AKxrwcagq8QREXMclDOVCOSp2Zi3FIdK4Q/mo/photo.jpg'
         twitter: valeriane_IT
   horacio_gonzalez__lostinbrittany_:
     type: Conference
     category: Big Data / ML / AI
     language: fr
-    title: "Monitoring OVH: 300k serveurs, 27 DCs une plateforme de métriques "
-    speakers :
+    title: 'Monitoring OVH: 300k serveurs, 27 DCs une plateforme de métriques '
+    speakers:
       - name: Horacio Gonzalez
-        photo: "https://lh4.googleusercontent.com/-6krIgoWnkGk/AAAAAAAAAAI/AAAAAAABR4o/EJH0Fh-m16k/photo.jpg"
+        photo: 'https://lh4.googleusercontent.com/-6krIgoWnkGk/AAAAAAAAAAI/AAAAAAABR4o/EJH0Fh-m16k/photo.jpg'
         twitter: LostInBrittany
   christophe_jollivet_jeremy_voisin:
-    type: Conference 
+    type: Conference
     category: Native mobile apps
     language: fr
-    title: "À la découverte de la réalité augmentée avec ARCore"
-    speakers :
+    title: 'À la découverte de la réalité augmentée avec ARCore'
+    speakers:
       - name: Christophe Jollivet
-        photo: "https://lh3.googleusercontent.com/-3sUzAaUN01o/AAAAAAAAAAI/AAAAAAAACzE/6Nekr6L7RSk/photo.jpg"
+        photo: 'https://lh3.googleusercontent.com/-3sUzAaUN01o/AAAAAAAAAAI/AAAAAAAACzE/6Nekr6L7RSk/photo.jpg'
         twitter: jollivetc
       - name: Jérémy Voisin
-        photo: "https://pbs.twimg.com/profile_images/1101261269372452864/oFWnzLJr_400x400.jpg"
+        photo: 'https://pbs.twimg.com/profile_images/1101261269372452864/oFWnzLJr_400x400.jpg'
         twitter: _JeremyVoisin_
   sebastien_brault:
-    type: Conference 
+    type: Conference
     category: WTF
     language: fr
-    title: "\"Numérique et environnement\" ou \"On aurait pu sauver les abeilles, on a préféré sortir un nouvel iPhone\""
-    speakers :
+    title: '"Numérique et environnement" ou "On aurait pu sauver les abeilles, on a préféré sortir un nouvel iPhone"'
+    speakers:
       - name: Sébastien Brault
-        photo: "https://pbs.twimg.com/profile_images/1057986854757249027/307O12Nj_400x400.jpg"
+        photo: 'https://pbs.twimg.com/profile_images/1057986854757249027/307O12Nj_400x400.jpg'
         twitter: sebastienbrault
   clement_duffau_melanie_ducoffe:
-    type: Conference 
+    type: Conference
     category: Big Data / ML / AI
     language: fr
-    title: "Quand les ratés des IAs nous renvoient à nos propres biais sociétaux"
-    speakers :
+    title: 'Quand les ratés des IAs nous renvoient à nos propres biais sociétaux'
+    speakers:
       - name: Clément Duffau
-        photo: "https://lh5.googleusercontent.com/-0l9xqsj5ePU/AAAAAAAAAAI/AAAAAAAAAAU/B8FhYLeXuaU/photo.jpg"
+        photo: 'https://lh5.googleusercontent.com/-0l9xqsj5ePU/AAAAAAAAAAI/AAAAAAAAAAU/B8FhYLeXuaU/photo.jpg'
         twitter: clement0210
       - name: Mélanie Ducoffe
-        photo: "https://lh3.googleusercontent.com/-CzRWhTBIOgY/AAAAAAAAAAI/AAAAAAAAAB8/gXi6gNoC0iY/photo.jpg"
+        photo: 'https://lh3.googleusercontent.com/-CzRWhTBIOgY/AAAAAAAAAAI/AAAAAAAAAB8/gXi6gNoC0iY/photo.jpg'
         twitter: mducoffe
   noel_mace:
     type: Conference
     category: Web
     language: fr
-    title: "Brace yourself, 🍦Vanilla is coming … back 🕶!"
-    speakers :
+    title: 'Brace yourself, 🍦Vanilla is coming … back 🕶!'
+    speakers:
       - name: Noël Macé
-        photo: "https://lh4.googleusercontent.com/-_DHdWW0tzAs/AAAAAAAAAAI/AAAAAAAAAGY/SHaW4w5ruEQ/photo.jpg"
+        photo: 'https://lh4.googleusercontent.com/-_DHdWW0tzAs/AAAAAAAAAAI/AAAAAAAAAGY/SHaW4w5ruEQ/photo.jpg'
         twitter: noel_mace
+  Liliia_Abdulina:
+    type: Conference
+    category: Native mobile apps
+    language: en
+    title: 'A Kotlin multiplatform evolution.'
+    speakers:
+      - name: Liliia Abdulina
+        photo: 'speakers/liliia.jpg'
+        twitter: var_lynx
   theophile_wallez:
     type: Quickie
     category: WTF
     language: fr
-    title: "Applications de Brainfuck, langage minimaliste mais Turing-complet"
-    speakers :
+    title: 'Applications de Brainfuck, langage minimaliste mais Turing-complet'
+    speakers:
       - name: Theophile Wallez
-        photo: "https://pbs.twimg.com/profile_images/3256357465/b161e1c4bdeba89a614d43bdf8563bab_400x400.jpeg"
+        photo: 'https://pbs.twimg.com/profile_images/3256357465/b161e1c4bdeba89a614d43bdf8563bab_400x400.jpeg'
         twitter: twallez
   guillaume_andrieu:
     type: Quickie
     category: WTF
     language: fr
-    title: "Le troll dans ta machine --- Une courte introduction à la pensée de Jean-Yves Girard"
-    speakers :
+    title: 'Le troll dans ta machine --- Une courte introduction à la pensée de Jean-Yves Girard'
+    speakers:
       - name: Guillaume Andrieu
-        photo: "https://pbs.twimg.com/profile_images/948992784375205889/Ri5OT6DH_400x400.jpg"
+        photo: 'https://pbs.twimg.com/profile_images/948992784375205889/Ri5OT6DH_400x400.jpg'
         twitter: glmxndr
   nicolas_decoster:
     type: Quickie
     category: Big Data / ML / AI
     language: fr
-    title: "Machine learning avec des allumettes et des cotillons"
-    speakers :
+    title: 'Machine learning avec des allumettes et des cotillons'
+    speakers:
       - name: Nicolas Decoster
-        photo: "https://pbs.twimg.com/profile_images/573162928913833986/mNWlOcuk_normal.png"
+        photo: 'https://pbs.twimg.com/profile_images/573162928913833986/mNWlOcuk_normal.png'
         twitter: nnodot
   juliane_blier:
     type: Quickie
     category: WTF
     language: fr
-    title: "Développeurs en reconversion, développeurs quand même !"
-    speakers :
+    title: 'Développeurs en reconversion, développeurs quand même !'
+    speakers:
       - name: Juliane Blier
-        photo: "https://avatars1.githubusercontent.com/u/22011253?v=4"
+        photo: 'https://avatars1.githubusercontent.com/u/22011253?v=4'
         twitter: tactless7
   richard_fagot:
     type: Quickie
     category: WTF
     language: fr
     title: "Un distributeur automatique d'argent de poche pour les enfants"
-    speakers :
+    speakers:
       - name: Richard Fagot
-        photo: "https://lh3.googleusercontent.com/-aY7lqdsbu9g/AAAAAAAAAAI/AAAAAAAAHwQ/BiQmX1JB7cg/photo.jpg"
+        photo: 'https://lh3.googleusercontent.com/-aY7lqdsbu9g/AAAAAAAAAAI/AAAAAAAAHwQ/BiQmX1JB7cg/photo.jpg'
         twitter: richardfagot
   gilles_debunne:
     type: Quickie
     category: WTF
     language: fr
-    title: "10 est une puissance de 2"
+    title: '10 est une puissance de 2'
     css: 'font-size: 78px;'
-    speakers :
+    speakers:
       - name: Gilles Debunne
-        photo: "https://lh5.googleusercontent.com/-sp8nHJQ_Ilg/AAAAAAAAAAI/AAAAAAAAJ5I/YvU72m2vsNA/photo.jpg"
+        photo: 'https://lh5.googleusercontent.com/-sp8nHJQ_Ilg/AAAAAAAAAAI/AAAAAAAAJ5I/YvU72m2vsNA/photo.jpg'
         twitter: gdebunne
   qj7nbl6wiyug1rhqtxf818a46po1:
     type: Quickie
     category: WTF
     language: fr
-    title: "« 47 ans : ils n’ont toujours pas remarqué … »"
-    speakers :
+    title: '« 47 ans : ils n’ont toujours pas remarqué … »'
+    speakers:
       - name: Yves Boyez
-        photo: "https://avatars2.githubusercontent.com/u/50613721?v=4"
+        photo: 'https://avatars2.githubusercontent.com/u/50613721?v=4'
         twitter: Zorkbomb
+  blanc_family:
+    type: Conference
+    category: Method & Tools
+    language: fr
+    title: "Le jaillissement de l'esprit"
+    speakers:
+      - name: Sébastien Blanc
+        photo: 'https://2019.devfesttoulouse.fr/images/speakers/sebastien_blanc.jpg'
+        twitter: sebi2706
+      - name: Saskia Blanc
+        photo: 'https://2019.devfesttoulouse.fr/images/speakers/saskia_blanc.jpg'
+        twitter: SaskiaLois
+      - name: Loïs Blanc
+        photo: 'https://2019.devfesttoulouse.fr/images/speakers/saskia_blanc.jpg'
