@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    :root {
+      --gdg-red: #ea4334;
+      --gdg-yellow: #fcbc05;
+      --gdg-blue: #4285f4;
+      --gdg-green: #0d9d58;
+      --twitter: #439cd6;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', cursive;
+    }
+
+    section {
+      display: block;
+      z-index: 0;
+      position: relative;
+      background-size: contain;
+      width: <%=config.viewport.width %>px;
+      height: <%=config.viewport.height %>px;
+    }
+
+    .container {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0;
+      bottom: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .talk-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-items: start;
+    }
+
+    .talk {
+      font-family: 'Roboto', cursive;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 30px;
+      position: relative;
+    }
+
+    .talk h2 {
+      font-size: 3em;
+      color: white;
+      margin-top: 0;
+      background-color: rgba(1, 1, 1, 0.5);
+      border-radius: 9px;
+      padding: 20px;
+    }
+
+    .talk:first-child {
+      margin-left: 0;
+    }
+    /* .talk:first-child::after {
+      content: '';
+      height: 300px;
+      top: calc(50% - 150px);
+      width: 10px;
+      background-color: white;
+      position: absolute;
+      right: -80px;
+      transform: rotate(20deg);
+    } */
+
+    .talk:last-child {
+      margin-right: 0;
+    }
+
+    .speakers {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .speaker {
+      text-align: center;
+      margin: 0 20px;
+    }
+
+    .speaker .pic {
+      margin: 10px auto;
+      width: 300px;
+      height: 300px;
+      border-radius: 100%;
+      border: 5px solid white;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .speaker h3 {
+      margin: 10px;
+      font-size: 3em;
+      color: white;
+      text-transform: capitalize;
+    }
+
+    .speaker .meta {
+      font-size: 2.5em;
+      color: white;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .speaker .meta > span {
+      margin: 0 4px;
+    }
+
+    .speaker .meta .company {
+      background-color: var(--gdg-red);
+      font-size: 50%;
+      border-radius: 10px;
+      padding: 4px 8px;
+    }
+
+    .speaker .meta .twitter {
+      color: var(--twitter);
+      font-size: 0.7em;
+      border-radius: 10px;
+      padding: 4px 8px;
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+    }
+
+    .speaker .meta .twitter > img {
+      width: 40px;
+      margin-right: 5px;
+    }
+
+    .talk-type {
+      font-family: 'Montserrat', cursive;
+      position: absolute;
+      left: 30px;
+      top: 20px;
+      color: white;
+      font-size: 3.5em;
+      text-transform: uppercase;
+      text-align: left;
+      font-weight: bolder;
+      line-height: 1em;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .talk-type img {
+      height: 125px;
+    }
+
+    .talk-meta {
+      font-family: 'Montserrat', cursive;
+      position: absolute;
+      left: 40px;
+      bottom: 20px;
+      color: white;
+      font-size: 2.5em;
+      text-transform: uppercase;
+      text-align: left;
+    }
+  </style>
+
+  <body>
+    <% items.forEach(function(meetup, index){ %>
+    <section style="background-image: url('background.jpg');">
+      <div class="container">
+        <div class="talk-type">
+          <img src="./types/<%= meetup.type %>.svg" />
+          <div>
+            <small>Soirée</small>
+            <br />
+            <%= meetup.type %>
+          </div>
+        </div>
+        <div class="talk-container">
+          <% meetup.talks.forEach(function(talk){ %>
+          <div class="talk">
+            <div class="speakers">
+              <% talk.speakers.forEach(function(speaker){ %>
+              <div class="speaker">
+                <div
+                  class="pic"
+                  style="background-image: url(<%= speaker.photo %>);"
+                ></div>
+                <h3 style="<% if (speaker.css) { %><%= speaker.css %><% } %>">
+                  <%= speaker.name %>
+                </h3>
+                <div class="meta">
+                  <!-- <% if (speaker.company) { %>
+                  <span class="company"><%= speaker.company %></span>
+                  <% } %> -->
+                  <% if (speaker.twitter) { %>
+                  <span class="twitter"
+                    ><img src="./img/twitter.svg" /> <%= speaker.twitter
+                    %></span
+                  >
+                  <% } %>
+                </div>
+              </div>
+              <% }); %>
+            </div>
+            <h2 style="<% if (talk.css) { %><%= talk.css %><% } %>">
+              <%= talk.title %>
+            </h2>
+          </div>
+          <% }); %>
+        </div>
+        <div class="talk-meta">
+          <%= meetup.date %>
+          <br />
+          <%= meetup.location %>
+        </div>
+      </div>
+    </section>
+    <% }); %>
+    <script src="/reload/reload.js"></script>
+  </body>
+</html>
