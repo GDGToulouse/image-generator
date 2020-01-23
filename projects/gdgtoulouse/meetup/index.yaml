@@ -2,13 +2,13 @@ viewport:
   width: 1920
   height: 1080
 screenshot:
-  type: "jpeg" # or "png"
-  quality: 100  # The quality of the image, between 0-100. Not applicable to png images.
+  type: 'jpeg' # or "png"
+  quality: 100 # The quality of the image, between 0-100. Not applicable to png images.
 items:
   211119:
     type: android
-    date: "21 Novembre 2019 - 18H45"
-    location: "HarryCow COworking"
+    date: '21 Novembre 2019 - 18H45'
+    location: 'HarryCow COworking'
     talks:
       - title: "Comment ventiler notre code à l'aide des LifeCycle Observers"
         speakers:
@@ -16,7 +16,7 @@ items:
             photo: 'https://i.ibb.co/pKrKYF3/MVIMG-20191023-194719-3.jpg'
             twitter: TSalvetat
             company: MonkeyPatch
-      - title: "Est-ce que mon service Android va mourir?"
+      - title: 'Est-ce que mon service Android va mourir?'
         speakers:
           - name: Nicolas Boutin
             photo: 'https://2019.devfesttoulouse.fr/images/speakers/fabien_tregan.jpg'
@@ -26,3 +26,24 @@ items:
             photo: 'https://2019.devfesttoulouse.fr/images/speakers/fabien_tregan.jpg'
             twitter: assere_r
             company: Sopra Steria
+  300120:
+    type: kotlin
+    date: '30 Janvier 2020 - 18H45'
+    location: 'HarryCow Coworking'
+    talks:
+      - title: 'Kotlin MultiPlatform: Day 365'
+        speakers:
+          - name: Rémy Sanfeliu
+            photo: 'https://bit.ly/2sidTl6'
+            twitter: remysanfeliu
+            company: Sopra Steria
+          - name: Julien Faixo
+            photo: https://raw.githubusercontent.com/jfaixo/127.0.0.1/master/me.jpg
+            twitter: jfaixo
+            company: Sopra Steria
+      - title: UI réactives avec Kotlin Flow
+        speakers:
+          - name: Alexandre Delattre
+            photo: 'https://pbs.twimg.com/profile_images/999280736967442436/3NEvyMoU_400x400.jpg'
+            twitter: alexandre_del31
+            company: MonkeyPatch
